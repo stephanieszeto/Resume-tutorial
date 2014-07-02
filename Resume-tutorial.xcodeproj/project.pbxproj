@@ -14,13 +14,13 @@
 		90E542501963D97900465B64 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E5424F1963D97900465B64 /* main.m */; };
 		90E542541963D97900465B64 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E542531963D97900465B64 /* AppDelegate.m */; };
 		90E542571963D97900465B64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90E542551963D97900465B64 /* Main.storyboard */; };
-		90E5425A1963D97900465B64 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E542591963D97900465B64 /* ViewController.m */; };
 		90E5425C1963D97900465B64 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90E5425B1963D97900465B64 /* Images.xcassets */; };
 		90E542631963D97900465B64 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90E542621963D97900465B64 /* XCTest.framework */; };
 		90E542641963D97900465B64 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90E542431963D97900465B64 /* Foundation.framework */; };
 		90E542651963D97900465B64 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90E542471963D97900465B64 /* UIKit.framework */; };
 		90E5426D1963D97900465B64 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 90E5426B1963D97900465B64 /* InfoPlist.strings */; };
 		90E5426F1963D97900465B64 /* Resume_tutorialTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E5426E1963D97900465B64 /* Resume_tutorialTests.m */; };
+		90E5427B1963E64700465B64 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E542591963D97900465B64 /* ProfileViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,8 +45,8 @@
 		90E542521963D97900465B64 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		90E542531963D97900465B64 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		90E542561963D97900465B64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		90E542581963D97900465B64 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		90E542591963D97900465B64 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		90E542581963D97900465B64 /* ProfileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		90E542591963D97900465B64 /* ProfileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 		90E5425B1963D97900465B64 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		90E542611963D97900465B64 /* Resume-tutorialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Resume-tutorialTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		90E542621963D97900465B64 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -112,11 +112,12 @@
 		90E542491963D97900465B64 /* Resume-tutorial */ = {
 			isa = PBXGroup;
 			children = (
+				90E5427A1963E4B400465B64 /* Views */,
+				90E542791963E4AD00465B64 /* Models */,
 				90E542521963D97900465B64 /* AppDelegate.h */,
 				90E542531963D97900465B64 /* AppDelegate.m */,
 				90E542551963D97900465B64 /* Main.storyboard */,
-				90E542581963D97900465B64 /* ViewController.h */,
-				90E542591963D97900465B64 /* ViewController.m */,
+				90E542781963E4A500465B64 /* View Controllers */,
 				90E5425B1963D97900465B64 /* Images.xcassets */,
 				90E5424A1963D97900465B64 /* Supporting Files */,
 			);
@@ -150,6 +151,29 @@
 				90E5426B1963D97900465B64 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		90E542781963E4A500465B64 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				90E542581963D97900465B64 /* ProfileViewController.h */,
+				90E542591963D97900465B64 /* ProfileViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		90E542791963E4AD00465B64 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		90E5427A1963E4B400465B64 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,7 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90E5425A1963D97900465B64 /* ViewController.m in Sources */,
+				90E5427B1963E64700465B64 /* ProfileViewController.m in Sources */,
 				90E542541963D97900465B64 /* AppDelegate.m in Sources */,
 				90E542501963D97900465B64 /* main.m in Sources */,
 			);
