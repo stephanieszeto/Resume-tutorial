@@ -7,6 +7,7 @@
 //
 
 #import "EmailViewController.h"
+#import <sendgrid.h>
 
 @interface EmailViewController ()
 
@@ -65,9 +66,6 @@
 }
 */
 
-- (IBAction)send:(id)sender {
-}
-
 # pragma mark - UITextFieldDelegate methods
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
@@ -87,6 +85,19 @@
         bodyFrame.size.height = newBottom - bodyFrame.origin.y;
         self.bodyTextView.frame = bodyFrame;
     }];
+}
+
+- (IBAction)send:(id)sender {
+    sendgrid *message = [sendgrid user:@"stephanieszeto" andPass:@"sendgrid1"];
+    
+    message.to = @"stephaniexszeto@gmail.com";
+    message.from = @"stephanie@liverail.com";
+    message.subject = [NSString stringWithFormat:@"Message from: %@\n\n", self.senderTextField.text];
+    message.text = self.bodyTextView.text;
+    message.html = [NSString stringWithFormat:@"<html>%@</html>", self.bodyTextView.text];
+    
+    [message sendWithWeb];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 @end
