@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		908831D0196E3A3D00760B3F /* SocialInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 908831CF196E3A3D00760B3F /* SocialInfo.m */; };
 		908831D1196E3B3800760B3F /* SocialInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 908831CF196E3A3D00760B3F /* SocialInfo.m */; };
+		908831D3196E700100760B3F /* ProfileViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 90E542581963D97900465B64 /* ProfileViewController.h */; };
 		90E542441963D97900465B64 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90E542431963D97900465B64 /* Foundation.framework */; };
 		90E542461963D97900465B64 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90E542451963D97900465B64 /* CoreGraphics.framework */; };
 		90E542481963D97900465B64 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90E542471963D97900465B64 /* UIKit.framework */; };
@@ -184,6 +185,17 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		908831D2196E6FEF00760B3F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				908831D3196E700100760B3F /* ProfileViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		90E5423F1963D97900465B64 /* Resume-tutorial */ = {
 			isa = PBXNativeTarget;
@@ -192,6 +204,7 @@
 				90E5423C1963D97900465B64 /* Sources */,
 				90E5423D1963D97900465B64 /* Frameworks */,
 				90E5423E1963D97900465B64 /* Resources */,
+				908831D2196E6FEF00760B3F /* Headers */,
 			);
 			buildRules = (
 			);
