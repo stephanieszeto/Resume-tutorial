@@ -23,7 +23,7 @@
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)viewWillLayoutSubviews {
+- (void)viewDidLayoutSubviews {
     CGRect descriptionFrame = self.descriptionTextView.frame;
     descriptionFrame.size = [self.descriptionTextView sizeThatFits:self.view.bounds.size];
     self.descriptionTextView.frame = descriptionFrame;
@@ -35,6 +35,7 @@
             scrollContentSize.height = viewBottom;
         }
     }
+    
     self.scrollView.contentSize = scrollContentSize;
 }
 

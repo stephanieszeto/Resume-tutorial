@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		90454C51196EF5ED0036AB57 /* SocialViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 90454C4F196EF5ED0036AB57 /* SocialViewController.h */; };
+		90454C52196EF5ED0036AB57 /* SocialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90454C50196EF5ED0036AB57 /* SocialViewController.m */; };
+		90454C55196EFDE20036AB57 /* WebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 90454C53196EFDE20036AB57 /* WebViewController.h */; };
+		90454C56196EFDE20036AB57 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90454C54196EFDE20036AB57 /* WebViewController.m */; };
+		90454C59196F08310036AB57 /* EmailViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 90454C57196F08310036AB57 /* EmailViewController.h */; };
+		90454C5A196F08310036AB57 /* EmailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90454C58196F08310036AB57 /* EmailViewController.m */; };
 		908831D0196E3A3D00760B3F /* SocialInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 908831CF196E3A3D00760B3F /* SocialInfo.m */; };
 		908831D1196E3B3800760B3F /* SocialInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 908831CF196E3A3D00760B3F /* SocialInfo.m */; };
 		908831D3196E700100760B3F /* ProfileViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 90E542581963D97900465B64 /* ProfileViewController.h */; };
@@ -37,6 +43,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		90454C4F196EF5ED0036AB57 /* SocialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SocialViewController.h; path = "View Controllers/SocialViewController.h"; sourceTree = "<group>"; };
+		90454C50196EF5ED0036AB57 /* SocialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SocialViewController.m; path = "View Controllers/SocialViewController.m"; sourceTree = "<group>"; };
+		90454C53196EFDE20036AB57 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WebViewController.h; path = "View Controllers/WebViewController.h"; sourceTree = "<group>"; };
+		90454C54196EFDE20036AB57 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WebViewController.m; path = "View Controllers/WebViewController.m"; sourceTree = "<group>"; };
+		90454C57196F08310036AB57 /* EmailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EmailViewController.h; path = "View Controllers/EmailViewController.h"; sourceTree = "<group>"; };
+		90454C58196F08310036AB57 /* EmailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EmailViewController.m; path = "View Controllers/EmailViewController.m"; sourceTree = "<group>"; };
 		908831CE196E3A3D00760B3F /* SocialInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SocialInfo.h; path = Models/SocialInfo.h; sourceTree = "<group>"; };
 		908831CF196E3A3D00760B3F /* SocialInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SocialInfo.m; path = Models/SocialInfo.m; sourceTree = "<group>"; };
 		90E542401963D97900465B64 /* Resume-tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Resume-tutorial.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -163,6 +175,12 @@
 			children = (
 				90E542581963D97900465B64 /* ProfileViewController.h */,
 				90E542591963D97900465B64 /* ProfileViewController.m */,
+				90454C4F196EF5ED0036AB57 /* SocialViewController.h */,
+				90454C50196EF5ED0036AB57 /* SocialViewController.m */,
+				90454C53196EFDE20036AB57 /* WebViewController.h */,
+				90454C54196EFDE20036AB57 /* WebViewController.m */,
+				90454C57196F08310036AB57 /* EmailViewController.h */,
+				90454C58196F08310036AB57 /* EmailViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -190,6 +208,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90454C51196EF5ED0036AB57 /* SocialViewController.h in Headers */,
+				90454C55196EFDE20036AB57 /* WebViewController.h in Headers */,
+				90454C59196F08310036AB57 /* EmailViewController.h in Headers */,
 				908831D3196E700100760B3F /* ProfileViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,8 +313,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90454C5A196F08310036AB57 /* EmailViewController.m in Sources */,
 				90E5427B1963E64700465B64 /* ProfileViewController.m in Sources */,
+				90454C56196EFDE20036AB57 /* WebViewController.m in Sources */,
 				90E542541963D97900465B64 /* AppDelegate.m in Sources */,
+				90454C52196EF5ED0036AB57 /* SocialViewController.m in Sources */,
 				908831D0196E3A3D00760B3F /* SocialInfo.m in Sources */,
 				90E542501963D97900465B64 /* main.m in Sources */,
 			);
