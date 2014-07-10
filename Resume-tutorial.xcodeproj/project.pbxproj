@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		908831D0196E3A3D00760B3F /* SocialInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 908831CF196E3A3D00760B3F /* SocialInfo.m */; };
+		908831D1196E3B3800760B3F /* SocialInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 908831CF196E3A3D00760B3F /* SocialInfo.m */; };
 		90E542441963D97900465B64 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90E542431963D97900465B64 /* Foundation.framework */; };
 		90E542461963D97900465B64 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90E542451963D97900465B64 /* CoreGraphics.framework */; };
 		90E542481963D97900465B64 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90E542471963D97900465B64 /* UIKit.framework */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		908831CE196E3A3D00760B3F /* SocialInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SocialInfo.h; path = Models/SocialInfo.h; sourceTree = "<group>"; };
+		908831CF196E3A3D00760B3F /* SocialInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SocialInfo.m; path = Models/SocialInfo.m; sourceTree = "<group>"; };
 		90E542401963D97900465B64 /* Resume-tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Resume-tutorial.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		90E542431963D97900465B64 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		90E542451963D97900465B64 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -45,8 +49,8 @@
 		90E542521963D97900465B64 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		90E542531963D97900465B64 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		90E542561963D97900465B64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		90E542581963D97900465B64 /* ProfileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
-		90E542591963D97900465B64 /* ProfileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		90E542581963D97900465B64 /* ProfileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ProfileViewController.h; path = "View Controllers/ProfileViewController.h"; sourceTree = "<group>"; };
+		90E542591963D97900465B64 /* ProfileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ProfileViewController.m; path = "View Controllers/ProfileViewController.m"; sourceTree = "<group>"; };
 		90E5425B1963D97900465B64 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		90E542611963D97900465B64 /* Resume-tutorialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Resume-tutorialTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		90E542621963D97900465B64 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -165,6 +169,8 @@
 		90E542791963E4AD00465B64 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				908831CE196E3A3D00760B3F /* SocialInfo.h */,
+				908831CF196E3A3D00760B3F /* SocialInfo.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -275,6 +281,7 @@
 			files = (
 				90E5427B1963E64700465B64 /* ProfileViewController.m in Sources */,
 				90E542541963D97900465B64 /* AppDelegate.m in Sources */,
+				908831D0196E3A3D00760B3F /* SocialInfo.m in Sources */,
 				90E542501963D97900465B64 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				908831D1196E3B3800760B3F /* SocialInfo.m in Sources */,
 				90E5426F1963D97900465B64 /* Resume_tutorialTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -480,6 +488,7 @@
 				90E542741963D97900465B64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		90E542751963D97900465B64 /* Build configuration list for PBXNativeTarget "Resume-tutorialTests" */ = {
 			isa = XCConfigurationList;
@@ -488,6 +497,7 @@
 				90E542771963D97900465B64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
